@@ -10,9 +10,10 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="曲线对齐.vi" Type="VI" URL="../曲线对齐.vi"/>
+		<Item Name="曲线对齐-多曲线.vi" Type="VI" URL="../曲线对齐-多曲线.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
 				<Item Name="compatReadText.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatReadText.vi"/>
 				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
@@ -27,14 +28,25 @@
 				<Item Name="Read Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet.vi"/>
 				<Item Name="Read File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read File+ (string).vi"/>
 				<Item Name="Read Lines From File (with error IO).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Lines From File (with error IO).vi"/>
+				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
+				<Item Name="Write Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (I64).vi"/>
+				<Item Name="Write Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (string).vi"/>
+				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
+				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="map.vi" Type="VI" URL="../map.vi"/>
+			<Item Name="XY曲线.vi" Type="VI" URL="../XY曲线.vi"/>
 			<Item Name="功能选择.ctl" Type="VI" URL="../功能选择.ctl"/>
+			<Item Name="加载数据.vi" Type="VI" URL="../加载数据.vi"/>
+			<Item Name="历史记录.vi" Type="VI" URL="../历史记录.vi"/>
+			<Item Name="区间重采样.vi" Type="VI" URL="../区间重采样.vi"/>
+			<Item Name="曲线定义.ctl" Type="VI" URL="../曲线定义.ctl"/>
 			<Item Name="曲线对齐sub.vi" Type="VI" URL="../曲线对齐sub.vi"/>
 			<Item Name="曲线平滑.vi" Type="VI" URL="../曲线平滑.vi"/>
-			<Item Name="曲线选择.ctl" Type="VI" URL="../曲线选择.ctl"/>
 			<Item Name="取范围.vi" Type="VI" URL="../取范围.vi"/>
+			<Item Name="时间重合区间.vi" Type="VI" URL="../时间重合区间.vi"/>
+			<Item Name="重采样.vi" Type="VI" URL="../重采样.vi"/>
 		</Item>
 		<Item Name="程序生成规范" Type="Build">
 			<Item Name="应用程序" Type="EXE">
@@ -53,7 +65,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{167100AB-94A2-4258-A28C-33CF68F5CA65}</Property>
-				<Property Name="Bld_version.build" Type="Int">9</Property>
+				<Property Name="Bld_version.build" Type="Int">13</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">曲线对齐.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../应用程序/NI_AB_PROJECTNAME.exe</Property>
@@ -64,10 +76,10 @@
 				<Property Name="Destination[1].path" Type="Path">../应用程序/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{4DEF58A5-6A40-48BC-B94C-30E969522BB0}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{3ECF167B-6FF1-4625-9472-CF251AC85FB0}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/我的电脑/曲线对齐.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/我的电脑/曲线对齐-多曲线.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
