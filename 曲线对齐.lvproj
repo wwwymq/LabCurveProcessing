@@ -10,6 +10,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="曲线对齐-多曲线-XY图.vi" Type="VI" URL="../曲线对齐-多曲线-XY图.vi"/>
 		<Item Name="曲线对齐-多曲线.vi" Type="VI" URL="../曲线对齐-多曲线.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -49,6 +50,50 @@
 			<Item Name="重采样.vi" Type="VI" URL="../重采样.vi"/>
 		</Item>
 		<Item Name="程序生成规范" Type="Build">
+			<Item Name="曲线处理应用程序" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{2E9B9CD5-4C42-41CF-9F0F-2CC0D1B34EF1}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{4C14E079-876D-4BB8-A125-73335D0584D0}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{2EF4B909-8536-470A-B62E-3730DAC96970}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">曲线处理应用程序</Property>
+				<Property Name="Bld_defaultLanguage" Type="Str">ChineseS</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../曲线处理应用程序</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{4293EEC6-A128-4D10-BABF-0F8ACD581E45}</Property>
+				<Property Name="Bld_version.build" Type="Int">15</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">曲线处理.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../曲线处理应用程序/曲线处理.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">支持目录</Property>
+				<Property Name="Destination[1].path" Type="Path">../曲线处理应用程序/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{2BA8D21D-DA88-43FA-B500-23D09F1458C9}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/我的电脑/曲线对齐-多曲线.vi</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/我的电脑/曲线对齐-多曲线-XY图.vi</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">应用程序</Property>
+				<Property Name="TgtF_internalName" Type="Str">应用程序</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">版权 2021 </Property>
+				<Property Name="TgtF_productName" Type="Str">应用程序</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{0C8C1990-F610-4817-838A-C818571D6407}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">曲线处理.exe</Property>
+			</Item>
 			<Item Name="应用程序" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{C7BD1594-7EF1-4209-AA86-05AB770BA481}</Property>
